@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { DataSharedService } from 'src/app/services/models/shared.service';
+import { DataSharedService } from './../../services/models/shared.service';
 
 @Component({
   selector: 'app-card-shared',
