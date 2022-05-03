@@ -1,0 +1,11 @@
+<mat-toolbar>
+  <div class="container-span">
+    <span>App:</span>
+    <span *ngIf="titleInOut">{{ titleInOut }}</span>
+    <span *ngIf="textSharedData$ | async as titleShareData">{{
+      titleShareData
+    }}</span>
+    <span *ngIf="emitted$ | async as titleEmitted">{{ titleEmitted }}</span>
+    <span *ngIf="subject$ | async as titleSubject">{{ titleSubject }}</span>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,37 @@
+<app-navbar [titleInOut]="textInOut"></app-navbar>
+
+<div class="grid">
+  <div>
+    <div class="container">
+      <h3>Shared Input/Output: {{ textInOut }}</h3>
+      <mat-card>
+        <app-card-in-out [textInOut]="textInOut"></app-card-in-out>
+        <app-form-in-out (sendData)="dataReceived($event)"></app-form-in-out>
+      </mat-card>
+    </div>
+  </div>
+  <div
+    ><div class="container">
+      <h3>Shared Emit: {{ emitted$ | async }}</h3>
+      <mat-card>
+        <app-card-emit></app-card-emit>
+        <app-form-emit></app-form-emit>
+      </mat-card></div
+  ></div>
+  <div
+    ><div class="container">
+      <h3>Shared Shared Service: {{ textSharedData$ | async }}</h3>
+      <mat-card>
+        <app-card-shared></app-card-shared>
+        <app-form-shared></app-form-shared>
+      </mat-card></div
+  ></div>
+  <div
+    ><div class="container">
+      <h3>Shared Subject:  {{ subject$ | async }}</h3>
+      <mat-card>
+        <app-card-subject></app-card-subject>
+        <app-form-subject></app-form-subject>
+      </mat-card></div
+  ></div>
+</div>

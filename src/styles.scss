@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container {
+  margin: 20px;
+}
+.container-button {
+  margin: 20px 0;
+}
+.container-span{
+  span{
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
