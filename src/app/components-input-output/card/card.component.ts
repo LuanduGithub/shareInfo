@@ -18,6 +18,8 @@ export class CardInOutComponent {
   public textInOutData: SimpleChange | undefined;
   @Input() textInOut: string | undefined;
   public ngOnChanges(changes: SimpleChanges) {
-    this.textInOutData = changes.TextInOut.currentValue;
+
+    debugger
+    this.textInOutData = changes.textInOut.currentValue;
   }
 }
